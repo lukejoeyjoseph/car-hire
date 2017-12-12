@@ -1,0 +1,12 @@
+.container {
+    position: relative;
+    margin-top: 5em;
+}
+
+hr {
+    border-top: solid 2px;
+}
+
+h2 {
+    margin-top: 20px;
+}

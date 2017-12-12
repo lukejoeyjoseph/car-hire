@@ -1,0 +1,31 @@
+<h1 class="display-4">Keresés a kölcsönzések között:</h1>
+<form [formGroup]="filterForm" ngNativeValidate>
+  <div class="form-row">
+    <div class="col">
+      <label for="searchBy">Adja meg mi alapján szeretne keresni?</label>
+      <select 
+        class="form-control"
+        formControlName="type"  
+        class="form-control"
+        id="type"
+        required>
+        <option selected>---</option>  
+        <option *ngFor="let attribute of attributes" (click)="setSelectedAttribute(attribute)">{{attribute}}</option>
+      </select> 
+    </div>
+    <div class="col">
+      <label for="value">Kérlek válassz az alábbiak közül!</label>
+      <select 
+        class="form-control"
+        formControlName="value"  
+        class="form-control"
+        id="value"
+        required>
+          <option selected>---</option>  
+          <option *ngFor="let value of values">{{value}}</option>
+      </select> 
+    </div>
+  </div>
+  
+  <button (click)="submit()" [disabled]="!filterForm.valid" class="btn btn-primary">Keresés!</button>
+</form>

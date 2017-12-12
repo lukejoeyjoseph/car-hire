@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col">
+    <h2 class="display-4">Ügyfelek listája:</h2>  
+    <table class="table">  
+      <thead>  
+        <tr>  
+          <th scope="col">#</th>  
+          <th scope="col">Név</th>  
+          <th scope="col">Születési dátum</th> 
+          <th scope="col">Lakcím</th>  
+          <th scope="col">Tagság kezdete</th> 
+          <th scope="col">Kölcsönzések száma</th>  
+        </tr>  
+      </thead>  
+      <tbody>
+          <tr *ngFor="let customer of customers">
+              <td> {{customer.id}} </td>
+              <td> {{customer.name}} </td>
+              <td> {{customer.birth}} </td>
+              <td> {{customer.address}} </td>
+              <td> {{customer.joined}} </td>
+              <td> {{customer.loans}} </td>
+            </tr>      
+      </tbody>  
+    </table>    
+</div>

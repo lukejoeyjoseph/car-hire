@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col">
+    <h2 class="display-4">Autók listája:</h2>  
+    <table class="table">  
+      <thead>  
+        <tr>  
+          <th scope="col">#</th>  
+          <th scope="col">Márka</th>  
+          <th scope="col">Model</th> 
+          <th scope="col">Évjárat</th> 
+          <th scope="col">Szín</th>
+          <th scope="col">Ár</th> 
+        </tr>  
+      </thead>  
+      <tbody> 
+        <tr *ngFor="let car of cars">
+          <td> {{car.id}} </td>
+          <td> {{car.make}} </td>
+          <td> {{car.model}} </td>
+          <td> {{car.year}} </td>
+          <td> {{car.color}} </td>
+          <td> {{car.price}} </td>
+        </tr>
+      </tbody>  
+    </table>    
+</div>

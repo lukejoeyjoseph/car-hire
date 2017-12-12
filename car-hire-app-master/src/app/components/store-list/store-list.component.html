@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col">
+    <h2 class="display-4">Üzletek listája:</h2>  
+    <table class="table">  
+      <thead>  
+        <tr>  
+          <th scope="col">#</th>  
+          <th scope="col">Név</th>  
+          <th scope="col">Cím</th> 
+          <th scope="col">Telefonszám</th>
+        </tr>  
+      </thead>  
+      <tbody> 
+          <tr *ngFor="let store of stores">
+              <td> {{store.id}} </td>
+              <td> {{store.name}} </td>
+              <td> {{store.address}} </td>
+              <td> {{store.phoneNumber}} </td>
+            </tr>
+      </tbody>  
+    </table>    
+</div>
