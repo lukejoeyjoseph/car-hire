@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: hu.elte.alkfejl.carhire.CarHireApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.762 sec - in hu.elte.alkfejl.carhire.CarHireApplicationTests
